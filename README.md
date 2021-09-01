@@ -54,6 +54,10 @@ setup(
 )
 ```
 
+### Install twine
+1. Find the latest version of twine on PyPI
+2. Add it to the requirements_dev.txt and install it using `pip install -r requirements_dev.txt`
+
 ### Commiting and Pushing the code to Github
 1. Add and commit the modified files until now. In my case they are:
     1. README.md
@@ -62,6 +66,11 @@ setup(
     4. chocochip/chocochip.py
     5. setup.py
 2. Push the files to remote branch
+
+### Publish on test PyPI
+1. If you don't have a Test PyPI account, create one.
+2. Then upload your package to Test PyPI using twine: `twine upload --repository-url https://test.pypi.org/legacy/ dist/*`
+3. pip install -i https://test.pypi.org/simple/ --extra-index-url https://pypi.org/simple chocochip==0.0.1
 
 
 ## References:
