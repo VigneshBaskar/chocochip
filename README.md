@@ -29,3 +29,41 @@ def give_me_a_cookie(name: str):
     print(f'Hi {name}! Here is your cookie again and again')
     return name
 ```
+### Add setup.py file
+Here is my template
+```python
+from setuptools import setup, find_packages
+
+with open("README.md", "r") as readme_file:
+    readme = readme_file.read()
+
+setup(
+    name="chocochip",
+    version="0.0.1",
+    author="Vignesh Baskaran",
+    author_email="vignesh.sbaskaran@gmail.com",
+    description="A package to provide you Chocochip cookies",
+    long_description=readme,
+    long_description_content_type="text/markdown",
+    url="https://github.com/VigneshBaskar/chocochip",
+    packages=find_packages(),
+    classifiers=[
+        "Programming Language :: Python :: 3.7",
+        "License :: OSI Approved :: GNU General Public License v3 (GPLv3)",
+    ],
+)
+```
+
+### Commiting and Pushing the code to Github
+1. Add and commit the modified files until now. In my case they are:
+    1. README.md
+    2. requirements_dev.txt
+    3. chocochip/__init__.py
+    4. chocochip/chocochip.py
+    5. setup.py
+2. Push the files to remote branch
+
+
+## References:
+1. https://towardsdatascience.com/build-your-first-open-source-python-project-53471c9942a7
+2. https://stackoverflow.com/a/33685899/6882624

@@ -7,6 +7,6 @@ def give_me_a_cookie(name: str):
     Returns:
         str: Name of the person
     """
-    print(f'Hi {name}! Here is your cookie again and again')
+    print(f'Hi {name}! Here is your cookie')
     return name
 
